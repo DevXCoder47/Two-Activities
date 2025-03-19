@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:text="@string/name"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="147dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/number"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="94dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/edit"
+        app:layout_constraintStart_toEndOf="@+id/nameTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="94dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/delete"
+        app:layout_constraintStart_toEndOf="@+id/nameTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
